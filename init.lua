@@ -27,3 +27,5 @@ require("common")
 --dofile("theme.lua")
 require("vimtree")
 require("barbar")
+
+vim.cmd("wincmd p")
