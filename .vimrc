@@ -1,4 +1,4 @@
-set nu
+set rnu
 set ai
 set tabstop=4
 set ls=2
@@ -13,7 +13,7 @@ endfunc
 
 map <F5> :call CompileRun()<cr>
 
-inoremap { {<cr>}<esc>O<tab>
+inoremap {s} {<cr>}<esc>O
 inoremap psvm public static void main(String[] args){<cr>}<esc>O
 inoremap stdout System.out.println();<left><left>
 inoremap pclass public class <C-R>=expand("%:t:r")<CR> {<cr>}<esc>O
