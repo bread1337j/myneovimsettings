@@ -1,7 +1,11 @@
 # myneovimsettings
 Made this so I can share it with my friends without having them follow a guide
 
-just throw this thing into ~/.config/nvim (if you don't have that folder, make it) and run setup.sh. Obviously you need to have nvim installed. This does not install nvim for you.
+This does not install neovim for you, just go to the repo download latest release extract it and make a bash alias towards it (what no sudo does to a man). 
+This also does not install clangd, you need to install a zip and unzip it in ~/.config/nvim
+
+
+just throw this thing into ~/.config/nvim (if you don't have that folder, make it) and run setup.sh. 
 
 doesn't really have too many fancy plugins because I am making this to use on school computers
 
