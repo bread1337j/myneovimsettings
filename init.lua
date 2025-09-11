@@ -17,6 +17,7 @@ Plug('romgrk/barbar.nvim')
 Plug('nvim-treesitter/nvim-treesitter', {['do'] = ':TSUpdate'})
 Plug('xiyaowong/transparent.nvim')
 
+
 vim.call('plug#end')
 
 home = os.getenv("HOME")
@@ -28,5 +29,35 @@ require("common")
 --dofile("theme.lua")
 require("vimtree")
 require("barbar")
+
+vim.lsp.config('*', {
+	root_markers = {'.git'}, 
+})
+
+vim.lsp.config('clangd', {
+  root_markers = { '.git', '.clang-format', 'compile_commands.json' },
+  capabilities = {
+    textDocument = {
+      completion = {
+        completionItem = {
+          snippetSupport = true,
+        }
+      }
+    }
+  }
+})
+
+vim.lsp.config.clangd = {
+  cmd = {
+    'clangd',
+    '--clang-tidy',
+    '--background-index',
+    '--offset-encoding=utf-8',
+  },
+  root_markers = { '.clangd', 'compile_commands.json' },
+  filetypes = { 'c', 'cpp' },
+}
+
+vim.lsp.enable('clangd')
 
 vim.cmd("wincmd p")
