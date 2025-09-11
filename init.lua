@@ -49,10 +49,7 @@ vim.lsp.config('clangd', {
 
 vim.lsp.config.clangd = {
   cmd = {
-    'clangd',
-    '--clang-tidy',
-    '--background-index',
-    '--offset-encoding=utf-8',
+  "/home/students/even/2026/agaziiantc60/.config/nvim/clangd_20.1.8/bin/clangd",
   },
   root_markers = { '.clangd', 'compile_commands.json' },
   filetypes = { 'c', 'cpp' },
