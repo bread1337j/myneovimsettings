@@ -49,7 +49,7 @@ vim.lsp.config('clangd', {
 
 vim.lsp.config.clangd = {
   cmd = {
-  "/home/students/even/2026/agaziiantc60/.config/nvim/clangd_20.1.8/bin/clangd",
+  "PATH_TO_CLANGD_HERE",
   },
   root_markers = { '.clangd', 'compile_commands.json' },
   filetypes = { 'c', 'cpp' },
