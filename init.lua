@@ -44,10 +44,6 @@ vim.lsp.config.clangd = {
 		'--background-index',
 		'--query-driver=/usr/bin/gcc',
 	},
-	root_dir = function(fname)
-		return vim.fs.dirname(vim.fs.find({'.clangd', '.git', 'compile_commands.json'}, { upward = true, path = fname })[1])
-	end,
-	-- Adding .clangd here ensures the LSP starts when it sees that file
 	root_markers = { '.clangd', 'compile_commands.json', '.git' },
 	filetypes = { 'c', 'cpp', 'objc', 'objcpp', 'cuda', 'proto' },
 	capabilities = {
