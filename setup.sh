@@ -28,15 +28,6 @@ else
 		echo "vimrc not found, have you already ran this file?"
 	fi
 fi
-read -p "Would you like to make vimtree open by default? [Y/n] " prompt2
-
-if [ "$prompt2" = "Y" ]; then
-	if ! test -f ~/.bash_aliases; then
-		echo "~/.bash_aliases not found, creating one"
-		touch ~/.bash_alises
-	fi
-	echo "Writing into .bash_aliases..."
-	echo alias nvim="nvim -c 'NvimTreeOpen'" >> ~/.bash_aliases
-fi
+	
 
 nvim -c "PlugInstall"

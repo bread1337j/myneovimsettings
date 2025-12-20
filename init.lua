@@ -16,7 +16,6 @@ Plug('kyazdani42/nvim-web-devicons')
 Plug('romgrk/barbar.nvim')
 Plug('nvim-treesitter/nvim-treesitter', {['do'] = ':TSUpdate'})
 Plug('xiyaowong/transparent.nvim')
-Plug('lervag/vimtex')
 
 vim.call('plug#end')
 
@@ -65,9 +64,5 @@ vim.lsp.config.clangd = {
 -- Then, ensure you actually start/enable the server
 vim.lsp.enable('clangd')
 
-
-
-
-vim.lsp.enable('clangd')
 
 vim.cmd("wincmd p")
