@@ -16,7 +16,6 @@ Plug('kyazdani42/nvim-web-devicons')
 Plug('romgrk/barbar.nvim')
 Plug('nvim-treesitter/nvim-treesitter', {['do'] = ':TSUpdate'})
 Plug('xiyaowong/transparent.nvim')
-Plug('sphamba/smear-cursor.nvim')
 Plug('rachartier/tiny-glimmer.nvim')
 vim.call('plug#end')
 
@@ -29,7 +28,6 @@ require("common")
 --dofile("theme.lua")
 require("vimtree")
 require("barbar")
-require("smear")
 require("glimmer")
 
 
